@@ -15,6 +15,20 @@ h1{
 
 h1 span{
   display: flex;
+  font-size: 0.9rem;
+}
+
+h1 span>a{
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 8px;
+  font-weight: 500;
+  color: black;
+  background-color: azure;
+}
+
+h1 span>a:active{
+  transform: scale(0.9);
 }
 
 .messages{

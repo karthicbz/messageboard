@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Messageboard</title>
+    <title><%=title%></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="javascripts/script.js" defer></script>
   </head>
   <body>
-    <h1>Message Board <span><button>New Message</button></span></h1>
+    <h1><%=title%> <span class="newMessage"><a href="http://localhost:3000/new">Post new message</a></span></h1>
       <%msg.map(m=>{%>
       <ul class="messages">
         <li><%=m.user%></li>

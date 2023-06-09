@@ -4,7 +4,7 @@ const messages = require('../Messages');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {msg: messages});
+  res.render('index', {title: 'Message Board', msg: messages});
 });
 
 router.get('/new', (req, res)=>{
