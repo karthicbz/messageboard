@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 1rem;
+}
+
+form textarea{
+    resize: none;
+}
