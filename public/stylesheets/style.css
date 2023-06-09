@@ -1,8 +1,32 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+h1{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 span{
+  display: flex;
+}
+
+.messages{
+  background-color: azure;
+  background-image: repeating-linear-gradient(23deg, #ebe8e8, transparent 100px);
+}
+
+li{
+  list-style: none;
+  padding: 5px 0;
+}
+
+li:first-child{
+  font-weight: 700;
 }

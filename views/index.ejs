@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Messageboard</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Message Board <span><button>New Message</button></span></h1>
+      <%msg.map(m=>{%>
+      <ul class="messages">
+        <li><%=m.user%></li>
+        <li><%=m.text%></li>
+        <li><%=m.added%></li>
+      </ul>
+      <%})%>
   </body>
 </html>
