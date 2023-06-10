@@ -5,7 +5,7 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%=title%> <span class="newMessage"><a href="http://localhost:3000/new">Post new message</a></span></h1>
+    <h1><%=title%> <span class="newMessage"><a href="/new">Post new message</a></span></h1>
       <%msg.map(m=>{%>
       <ul class="messages">
         <li><%=m.user%></li>
