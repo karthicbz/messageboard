@@ -49,3 +49,9 @@ form textarea{
       opacity: 1;
     }
   }
+
+  @media screen and (max-width: 414px){
+    form{
+        width: 260px;
+    }
+  }
