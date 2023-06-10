@@ -16,7 +16,7 @@ router.post('/new', (req, res)=>{
     messages.push({text:req.body.userMessage, user:req.body.userName, added: new Date});
     res.redirect('/');
   }else{
-    res.render('newMessage', {error: 'name and message must not be empty'});
+    res.render('newMessage', {error: 'name and message must not be empty', userName: req.body.userName, userMessage: req.body.userMessage});
     res.redirect('/new');
   }
   // res.redirect('http://localhost:3000');

@@ -34,6 +34,12 @@ h1 span>a:active{
 .messages{
   background-color: azure;
   background-image: repeating-linear-gradient(23deg, #ebe8e8, transparent 100px);
+  animation-name: show-slowly, change-gradient-direction;
+  animation-duration: 2s, 2s;
+  animation-iteration-count: 1, 1;
+  animation-direction: normal, normal;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55), ease-out;
+  animation-delay: 0ms, 1s;
 }
 
 li{
@@ -43,4 +49,36 @@ li{
 
 li:first-child{
   font-weight: 700;
+}
+
+@keyframes show-slowly{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes change-gradient-direction{
+  from{
+    background-image: repeating-linear-gradient(320deg, #ebe8e8, transparent 100px);
+  }
+
+  20%{
+    background-image: repeating-linear-gradient(340deg, #ebe8e8, transparent 100px);
+  }
+
+  40%{
+    background-image: repeating-linear-gradient(360deg, #ebe8e8, transparent 100px);
+  }
+
+  60%{
+    background-image: repeating-linear-gradient(10deg, #ebe8e8, transparent 100px);
+  }
+
+  to{
+    background-image: repeating-linear-gradient(23deg, #ebe8e8, transparent 100px);
+  }
 }
