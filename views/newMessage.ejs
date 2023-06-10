@@ -16,6 +16,12 @@
         <textarea name="userMessage" id="userMessage" cols="30" rows="10"></textarea>
         <button type="submit">Post</button>
     </form>
-    <p><%=error%></p>
+    <p class="error-text"><%=error%></p>
 </body>
+<script>
+    const errorText = document.querySelector('.error-text');
+    if(errorText.textContent !== ''){
+        errorText.classList.toggle('error');
+    }
+</script>
 </html>
